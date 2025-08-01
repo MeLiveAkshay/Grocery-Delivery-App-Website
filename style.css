@@ -1,12 +1,81 @@
-*{
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    box-sizing: auto;
-   color: #55d914;
+/* Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.text-center{
-    text-align: center;
+
+/* Hero Section Styling */
+.heroSection {
+  background-color: #e3dcdf; /* Light background */
+  padding: 3rem 1rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo Text */
+.LogoName {
+  color: #16a260; /* Or use: var(--fresh-green) */
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.description {
+  color: hsl(215.4, 16.3%, 46.9%);
+  font-size: 1rem;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Download Store Buttons */
+.divItem {
+  margin: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Key Feature Boxes */
+.keyFeatures .divItem {
+  margin: 20px 10px;
+  padding: 1.5rem 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Hover Effect */
+.divItem:hover {
+  border: 1px solid #16a260;
+  background-color: #f6fff9;
+  box-shadow: 0 4px 12px rgba(22, 162, 96, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Icons */
+.divItem i {
+  transition: transform 0.3s ease;
+}
+
+.divItem:hover i {
+  transform: scale(1.1);
+}
+
+/* Feature Headings */
+.divItem h5 {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Utility Class */
+.text-yellow {
+  color: #ffc107; /* Bootstrap yellow */
 }
